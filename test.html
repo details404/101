@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+</head>
+
+<body>
+<div class="container">
+  <canvas class="canv" id="cv">
+    <!--canvas attrubutes-->
+  </canvas>
+</div>
+
+<script>
+  const canvas = document.getElementById("cv");
+  ctx = canvas.getContext('2d');
+  ctx.fillStyle = '#008';
+  ctx.font = 'bold';
+  ctx.fillRect(0,0,100,100);
+  ctx.fillText("Testing attributes for canvas", 20, 20);
+  if(!stopped){
+    ctx.fillStyle = "#fff";
+  }
+ 
+  
+  var x = function(){
+    y = "details";
+    alert(y);
+  };
+  x();
+  /*
+  loop: function btn(){
+    const canv = document.querySelector(".canv");
+    can = canv.getContext('2d');
+ };
+  btn();*/
+</script>
+</body>
+
+</html>

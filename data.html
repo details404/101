@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<style>
+  .cir{
+    border: 6px #32fff6 solid;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    background: #000;
+    position: relative;
+    right: -160px;
+    animation: transition 3s infinite;
+    text-align: center;
+    color: #fff;
+  }
+  @keyframes transition{
+    0%{transform: translateY(0px);}
+    20%{transform: translateY(20px); background: #fff; color: #000;}
+    40%{transform: translateY(20px); border: #000 solid 6px;}
+  }
+</style>
+<body>
+  <div class="cir"></div>
+  <canvas id="canvas"></canvas>
+  <script src="./data.js" charset="UTF-8"></script>
+</body>
+</html>
