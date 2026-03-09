@@ -113,8 +113,9 @@ box-shadow: 0 0 10px 10px #f3f3f3;
             const btn = document.querySelector(".btn");
             btn.addEventListener("click", () => {
                      const inputURL = document.getElementById("inputField");
-            const a = document.createElement('a');
-            a.href = inputURL.value;
+       fetch = inputURL.value; 
+    const a = document.createElement('a');
+            a.href = `http://google.com/search?=${inputURL.value}` + ;
             a.click();
         
             });</script>
