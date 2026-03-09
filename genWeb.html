@@ -27,6 +27,9 @@
 box-shadow: 0 0 5px 5px #f3f3f3;
            
         }
+        .res{
+            color: #f3f3f3;
+        }
         @keyframes robotFloat{
             10%{position: relative; top: 160px;}
             40%{position: relative; top: 150px;}
@@ -77,6 +80,7 @@ box-shadow: 0 0 10px 10px #f3f3f3;
         }
     </style>
     <body>
+        <div class='res'></div>
         <div class="robot">
             <div class="eyes"></div>
             &nbsp;&nbsp;&nbsp;&nbsp;
@@ -91,6 +95,7 @@ box-shadow: 0 0 10px 10px #f3f3f3;
         </div>
         <script encoding="utf-8">
            function url(){
+      
                 const inputField = document.getElementById("inputField");
             return new Promise(resolve =>{
             
@@ -117,6 +122,13 @@ box-shadow: 0 0 10px 10px #f3f3f3;
     const a = document.createElement('a');
             a.href = `http://google.com/search?=${fetch}`;
             a.click();
+                     const res = document.querySelector('.res');
+               setTimeout(() =>{
+                   res.innerHTML = 'Loading...';
+               }, 1000)
+               setTimeout(() =>{
+                   res.innerHTML = '';
+               }, 2000)
         
             });</script>
     </body>
