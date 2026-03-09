@@ -1,4 +1,4 @@
-Installing Ubuntu 22.04.5 in VirtualBox 7.1.10 is a straightforward process. Here’s a step-by-step guide to help you through the installation:
+.Installing Ubuntu 22.04.5 in VirtualBox 7.1.10 is a straightforward process. Here’s a step-by-step guide to help you through the installation:
 
 ### Prerequisites
 
